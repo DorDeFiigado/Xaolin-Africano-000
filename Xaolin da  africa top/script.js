@@ -6,72 +6,71 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Você chega ao velho templo onde seu mestre costumava meditar. O lugar está silencioso, mas você sente uma presença ameaçadora. Diante de você há duas entradas principais no templo: uma leva ao jardim central, onde você pode procurar pistas, e a outra leva diretamente ao salão principal, onde você pode confrontar diretamente seu mestre. Qual escolha você faz?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "No início ficou com medo do que essa tecnologia pode fazer. "
+                texto: "Ir ao jardim central para procurar pistas.",
+                afirmacao: "Você decide explorar o jardim central. Entre as plantas e os antigos pergaminhos espalhados, você encontra uma mensagem escondida embaixo de uma pedra. A mensagem é um enigma que sugere um segredo profundo sobre a traição do mestre. No entanto, você ouve ruídos vindo do salão principal."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                texto: "Ir diretamente ao salão principal para confrontar seu mestre.",
+                afirmacao: "Você entra no salão principal, e lá está seu mestre, o polvo. Ele está em uma posição de meditação, mas percebe sua chegada e se levanta calmamente. Há uma tensão no ar. O polvo parece preparado para uma batalha ou uma conversa."
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "No jardim central, você encontra uma mensagem enigmática sobre a traição do seu mestre. Você ouve ruídos vindo do salão principal. O que você faz?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
+                texto: "Decifrar a mensagem para entender melhor a traição.",
+                afirmacao: "Você decifra a mensagem e descobre que seu mestre havia sido forçado a trair você devido a uma ameaça maior, um inimigo antigo que ele não podia enfrentar sozinho. Essa nova informação revela um dilema: continuar sua busca por vingança ou tentar unir forças para enfrentar um perigo maior."
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
+                texto: "Seguir para o salão principal imediatamente, agora com uma possível vantagem.",
+                afirmacao: "Você corre para o salão principal, determinado a enfrentar seu mestre com as novas informações. O polvo percebe sua determinação e se prepara para o confronto."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Você entra no salão principal e vê seu mestre, o polvo, em uma posição de meditação. Ele percebe sua chegada e se levanta calmamente. Como você se posiciona?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                texto: "Desafiar o mestre para um combate imediato.",
+                afirmacao: "Você desafia seu mestre para uma luta. Ele aceita, e uma batalha épica se desenrola. Durante a luta, o polvo revela a verdade sobre sua traição e a razão pela qual fez o que fez. Ele implora por uma chance de explicar e se redimir."
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                texto: "Tentar conversar e descobrir as razões por trás da traição.",
+                afirmacao: "Você tenta conversar com seu mestre para entender as razões por trás da traição. Ele revela uma verdade dolorosa, e você percebe que o caminho da redenção é mais complexo do que a simples vingança."
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Você descobre que seu mestre foi forçado a trair você devido a uma ameaça maior. Qual será sua próxima ação?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                texto: "Ir atrás do inimigo mencionado na mensagem para proteger seu mestre e vingar a traição.",
+                afirmacao: "Você decide enfrentar o inimigo maior mencionado na mensagem. Junto com seu mestre, você batalha contra essa nova ameaça, salvando o templo e revelando uma conspiração maior. Seu mestre lhe agradece e se redime por suas ações passadas."
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
+                texto: "Continuar sua busca pessoal por vingança, ignorando a nova ameaça.",
+                afirmacao: "Você ignora a nova ameaça e continua sua busca por vingança. A batalha com seu mestre se torna mais intensa, mas a vingança cega o leva a questionar se a justiça foi realmente feita."
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "Após uma intensa batalha ou uma conversa reveladora, você se depara com uma decisão crítica sobre o futuro do seu mestre e o seu próprio futuro. O que você escolhe?",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
+                texto: "Aceitar a explicação e dar uma chance para a redenção.",
+                afirmacao: "Você dá a seu mestre a oportunidade de explicar a traição. Ele revela uma verdade dolorosa, e você decide se reconciliar ou seguir um novo caminho. A vingança pode ter sido deixada de lado, mas a justiça foi feita e novas alianças foram formadas."
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
+                texto: "Continuar o combate até o fim, sem dar ouvidos às explicações.",
+                afirmacao: "Você continua o combate até o fim, ignorando as explicações. A luta é feroz, mas ao final, você percebe que a vingança pode ter um custo maior do que imaginava."
             }
         ]
     },
 ];
-
 
 let atual = 0;
 let perguntaAtual;
@@ -105,7 +104,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Em 1855...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
